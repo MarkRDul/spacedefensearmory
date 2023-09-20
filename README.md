@@ -9,6 +9,11 @@ To set up site, ensure that the database connection in includes/dbh.inc.php has 
 ## Vulnerabilities
 This website is intentionally vulnerable to a multitude of major security errors. As this site is intended to test participant's ability to identify vulnerabilities and patch them, you may wish to try yourself before looking at the complete list.
 
+The alien monitoring sites can be changed in severity by using Get parameters when visiting the monitor page. This can be done by going to the url:
+http://<ip>/monitor.php?axiom=0&fcl=0&mec=0&pp=0
+Where any of those numbers can be 0 through 4. Changing those numbers allows the status of the sites to be updated following a visit to the page.
+
+---
 ### Vulnerability List
 * SQL injections
     - When updating monitor
